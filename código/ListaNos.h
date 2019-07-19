@@ -10,7 +10,7 @@ private:
     Vertices* primeiro;
     Vertices* ultimo;
 public:
-    ListaNos(Vertices* p,Vertoces* u);
+    ListaNos(Vertices* p,Vertices* u);
     ~ListaNos();
 
     /* Getters e Setters */
