@@ -1,6 +1,8 @@
 #ifdef NO_H_INCLUDED
 #define NO_H_INCLUDED
 
+#include "ListaArestas.h"
+
 class No{
 
 private:
@@ -45,6 +47,7 @@ class Vertices { // Vértice é um elemento da Lista de Nós
 private:
     No* v;
     Vertices* prox;
+    ListaArestas* arestas;
 public:
     /** 
     * Construtor de Vértices 
@@ -52,6 +55,7 @@ public:
     Vertices(No* n){
         this->v = n;
         this->prox = nullptr;
+        arestas = new ListaAresta(nullptr,nullptr,0);
     };
 
     /**
@@ -59,12 +63,14 @@ public:
     **/
     ~Vertices(){
         delete this->v;
+        delete this->arestas;
     };
 
     /* Getters e Setters */
     No* getNo(){return this->v;};
     Vertices* getProx(){return this->prox;};
     void setProx(Vertices* n){tis->prox = n;};
+    ListaArestas* getArestas(){return this->arestas;};
 };
 
 #endif //NO_H_INCLUDED
