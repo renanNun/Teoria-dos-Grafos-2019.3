@@ -13,8 +13,16 @@ private:
     bool ehDirecional;
 
 public:
-    Grafo(bool dir, int numNos);
-    ~Grafo();
+    Grafo(bool dir, int numNos){
+        this->numNos = numNos;
+        this->ehDirecional = dir;
+    };
+    ~Grafo(){};
+
+    int getNumNos(){return this->numNos;};
+    bool ehDirecional(){return this->ehDirecional;};
+    void setNumNos(int n){this->numNos = n;};
+    void setDirecional(bool x){this->ehDirecional = x;};
 
 };
 
