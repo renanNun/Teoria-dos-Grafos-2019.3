@@ -40,4 +40,4 @@ public:
 
 };
 
-#endif ARESTA_H_INCLUDED
+#endif //ARESTA_H_INCLUDED

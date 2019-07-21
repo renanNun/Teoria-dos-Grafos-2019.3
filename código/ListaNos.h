@@ -73,8 +73,8 @@ public:
 
     void imprime(){
         if(this->primeiro != nullptr){
-            std::cout << std::endl << "(id do No)
-             --peso da aresta--> (id do No)" << std::endl;
+            std::cout << std::endl << "(" << "id do No" << ")" <<
+             "--peso da aresta-->" << "(" << "id do No" << ")" << std::endl;
 
              Vertices* p = this->primeiro;
              while (p!= nullptr){
