@@ -2,6 +2,7 @@
 #define ARESTA_H_INCLUDED
 
 #include <iostream>
+#include "No.h"
 #include "elementoListaNos.h"
 
 

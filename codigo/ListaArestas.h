@@ -2,7 +2,13 @@
 #define LISTAARESTAS_H_INCLUDED
 
 #include <iostream>
+
+
+class Aresta; // Apenas para o programa saber que esta classe existe
+class Vertice; //Apenas para o programa saber que esta classe existe
+
 #include "Aresta.h"
+#include "elementoListaNos.h"
 
 class ListaAresta{
 

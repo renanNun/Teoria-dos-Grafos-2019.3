@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Aresta.cpp" />
+		<Unit filename="Aresta.h" />
+		<Unit filename="ListaArestas.h" />
+		<Unit filename="No.cpp" />
+		<Unit filename="No.h" />
+		<Unit filename="elementoListaNos.cpp" />
+		<Unit filename="elementoListaNos.h" />
+		<Unit filename="listaArestas.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
