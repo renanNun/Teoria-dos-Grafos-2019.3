@@ -18,7 +18,7 @@ public:
     Vertice* getUltimo();
     int getNumNos();
 
-    void setPrimeiro(Vertice* p)
+    void setPrimeiro(Vertice* p);
     void setUltimo(Vertice* p);
     void setNumNos(int p);
 
