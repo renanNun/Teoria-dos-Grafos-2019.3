@@ -2,6 +2,7 @@
 #define GRAFO_H_INCLUDED
 #include "Aresta.h"
 #include "No.h"
+#include "ElementoListaNos.h"
 #include "ListaArestas.h"
 #include "ListaNos.h"
 

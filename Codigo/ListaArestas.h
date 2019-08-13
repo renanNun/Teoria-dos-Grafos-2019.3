@@ -2,7 +2,7 @@
 #define LISTAARESTAS_H_INCLUDED
 
 #include "Aresta.h"
-#include "No.h"
+#include "ElementoListaNos.h"
 
 class ListaArestas{
 

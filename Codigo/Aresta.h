@@ -1,16 +1,16 @@
 #ifdef ARESTA_H_INCLUDED
 #define ARESTA_H_INCLUDED
 
-#include "No.h"
+#include "ElementoListaNos.h"
 
 class Aresta{
-
-private:
-    int peso;
-    Vertices* v;
-    Vertices* v_origem;
-    Aresta* prox;
-public:
+    private:
+        float peso;
+        Vertices* v;
+        Vertices* v_origem;
+        Aresta* prox;
+    public:
+    
     /** 
     * Construtor de Aresta
     * @param origem é o vertice de qual a aresta se origina
