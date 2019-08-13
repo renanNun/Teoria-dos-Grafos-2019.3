@@ -10,7 +10,7 @@
 	"No.h"
 	"elementoListaNos.h"
 
-1565709472 /home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/elementoListaNos.h
+1565709513 /home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/elementoListaNos.h
 	<iostream>
 	"No.h"
 	"ListaArestas.h"
@@ -24,8 +24,11 @@
 1565706403 source:/home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/No.cpp
 	"No.h"
 
-1565709427 /home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/ListaArestas.h
+1565709536 /home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/ListaArestas.h
 	<iostream>
 	"Aresta.h"
 	"elementoListaNos.h"
+
+1565709485 source:/home/renan/Documentos/Projetos/Teoria-dos-Grafos-2019.3/codigo/listaArestas.cpp
+	"ListaArestas.h"
 
