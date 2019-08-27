@@ -1,43 +1,36 @@
-#ifdef ARESTA_H_INCLUDED
-#define ARESTA_H_INCLUDED
+/**
+ * Universidade Federal de Juiz de Fora
+ * Aresta.h
+ * Propósito: Header da estrutura Aresta, para implementação de um grafo
+ * 
+ * @autor Renan Nunes da Costa Gonçalves
+ * @version 1.0 27/08/2019
+*/
 
-#include "ElementoListaNos.h"
+#ifndef ARESTA_H_INCLUDED
+#define ARESTA_H_INCLUDED
+#include <iostream>
 
 class Aresta{
-    private:
-        float peso;
-        Vertices* v;
-        Vertices* v_origem;
-        Aresta* prox;
-    public:
-    
-    /** 
-    * Construtor de Aresta
-    * @param origem é o vertice de qual a aresta se origina
-    * @param vertice é o vertice para qual a aresta se direciona
-    * @param peso é o peso do caminho de um vertice à outro 
-    **/
-    Aresta(Vertices* origem, Vertices* vertice,int peso){
-        this->v = vertice;
-        this->v_origem = origem;
-        this->peso = peso;
-        this->prox = nullptr;
-    };
 
-    /** 
-    * Destrutor de Arestas 
-    **/
-    ~Aresta(){};
+private:
+    int id;
+    float peso;
+    Aresta* prox;
 
-    /* Getters e Setters */
-    int getPeso(){return this->peso;};
-    Vertices* getOrigem(){return this->v_origem;};
-    Vertices* getVertice(){return this->v;};
-    Aresta* getProx(){retun this->prox;};
-    void setPeso(int n){this->peso = n;};
-    void setVertice(Vertices* n){this->v = n;};
-    void setProx(Aresta* n){this->prox = n;};
+public:
+    Aresta(int idAresta);
+    Aresta(int idAresta, float p);
+    ~Aresta();
 
+    /*Getters e Setters*/
+    int getId();
+    float getPeso();
+    Aresta* getProx();
+
+    void setId(int p);
+    void setPeso(float p);
+    void setProx(Aresta* p);
 };
 
 #endif //ARESTA_H_INCLUDED
