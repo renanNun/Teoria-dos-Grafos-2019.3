@@ -33,6 +33,8 @@ void menu(){
 int main(){
 
     //menu();
+    Grafo* g;
+    Io* leitura;
 
     return 0;
 }

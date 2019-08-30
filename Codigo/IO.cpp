@@ -36,7 +36,9 @@ const char* Io::getCaminhoDiretorio(){
 void Io::leituraGrafo(Grafo* g,char* caminhoDiretorio){
     
     ifstream arquivo;
-    string line;
+    string linha;
+    int num,n1,n2;
+    float n3;
 
     arquivo.open("entrada.txt"); //Abre o arquivo de Entrada
 
@@ -46,10 +48,40 @@ void Io::leituraGrafo(Grafo* g,char* caminhoDiretorio){
         exit(1);
     } 
 
+    // Lê o número de Nós de um Grafo, converte para inteiro e guarda no Objeto grafo
+    arquivo >> linha;
+    stringstream convert(linha);
+    convert>>num;
+    g->setOrdem(num);
+
+
     //Pego o primeiro elemento com a ordem de elementos de um grafo
     
-    while(getline(arquivo,line)){
+    while(!arquivo.eof()){
 
+        if(arquivo >> linha)
+        {
+            //Lê a informação do vértice de origem e converte para inteiro
+            stringstream convert1(linha);
+            convert1>>n1;
+        }
+
+        if(arquivo >> linha){
+            //Lê a informação do vértice de origem e converte para inteiro
+            stringstream convert2(linha);
+            convert2>>n2;
+        }
+
+        if(arquivo >> linha){
+            //Lê a informação da aresta de origem e converte para float
+            convert>>n3;
+        }
+        
+        //Cria Aresta entre os vértices (Se não existeriem, também os cria)
+        g->insereAresta(n1,0,n2,0,n3);
     }
+
+    arquivo.close();
+    arquivo.clear();
 
 }

@@ -9,10 +9,13 @@
 #ifndef IO_H_INCLUDED
 #define IO_H_INCLUDED
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 #include <ostream>
 #include <fstream>
 #include <time.h>
 #include <string>
+#include <sstream>
 
 #include "Grafo.h"
 

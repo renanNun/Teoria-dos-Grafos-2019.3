@@ -19,8 +19,6 @@ private:
     float pesoNo;
     int din; //Grau de Entrada
     int dout; //Grau de Saída
-    No* prox; //Ponteiro para o próximo Nó
-    Aresta* adj; //Ponteiro para a Aresta Adjacênte
 
 public:
     No(int id);
@@ -32,21 +30,14 @@ public:
     float getPeso();
     int getGrauEntrada();
     int getGrauSaida();
-    No* getProx();
-    Aresta* getAdj();
 
     void setIdNo(int p);
     void setPesoNo(float p);
-    void setProx(No* p);
-    void setAdj(Aresta *p);
     void aumentaGrauSaida();
     void diminuiGrauSaida();
     void aumentaGrauEntrada();
     void diminuiGrauEntrada();
 
-    /*Métodos da Classe*/
-    void deletaNo();
-    void insereAresta();
 
 };
 

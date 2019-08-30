@@ -10,13 +10,12 @@
 #ifndef GRAFO_H_INCLUDED
 #define GRAFO_H_INCLUDED
 #include <iostream>
-#include "No.h"
+#include "ListaNo.h"
 
 class Grafo{
 
 private:
     int ordem; //A ordem de um Grafo corresponde ao seu número de Nós
-    No* raiz;
 
     bool orientado;
     bool ponderado; 
@@ -27,12 +26,13 @@ public:
 
     /*Getters e Setters*/
     int getOrdem();
-    No* getRaiz();
+    void setOrdem(int n);
     bool ehOrientado();
     bool ehPonderado();
 
     /*Métodos da Classe Grafos*/
     void imprime();
+    void insereAresta(int idNo1, float pesoNo1, int idNo2, float pesoNo2, float pesoAresta);
 
     void buscaEmLargura();
     void buscaEmProfundidade();

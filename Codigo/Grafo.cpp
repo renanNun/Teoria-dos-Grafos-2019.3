@@ -40,6 +40,21 @@ void Grafo::imprime(){
     }
 }
 
+void Grafo::insereAresta(int idNo1, float pesoNo1, int idNo2, float pesoNo2, float pesoAresta){
+    No* v = buscaNo(idNo1);
+    No* a = buscaNo(idNo2);
+
+    bool existeV = true;
+    bool existeA = true;
+    bool existeAresta = false;
+
+    //Verifica se os vértices a serem ligados por uma aresta Existem, caso não, os cria
+    if (v == nullptr){
+        existeV = false;
+        insereNo(idNo1,pesoNo1);
+        //insere o ultimo elemento em uma lista
+    }
+}
 
 /*Getters e Setters*/
 int Grafo::getOrdem(){
