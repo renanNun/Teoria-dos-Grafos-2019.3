@@ -29,8 +29,37 @@ Aresta::Aresta(int idAresta,float p){
 }
 */
 
-Aresta::Aresta(ElementoNo* cab, ElementoNo* cau, float peso);
-Aresta:Aresta(int id,ElementoNo* cab, ElementoNo* cau, float peso);
+
+/**
+ * Construtor da classe Aresta
+ * @param cab - Representa o Vértice de qual a Aresta se origina
+ * @param cau - Representa o Vértice para o qual a Aresta se dirige
+ * @param peso - Representa o peso/custo de uma aresta
+ * @autor: Renan Nunes da Costa Gonçalves
+*/
+Aresta::Aresta(ElementoNo* cab, ElementoNo* cau, float peso){
+    this->cabeca = cab;
+    this->cauda = cau;
+    this->peso = peso;
+    this->id = -1;
+
+}
+
+
+/**
+ * Construtor da classe Aresta
+ * @param id - Representa o id de uma Aresta
+ * @param cab - Representa o Vértice de qual a Aresta se origina
+ * @param cau - Representa o Vértice para o qual a Aresta se dirige
+ * @param peso - Representa o peso/custo de uma aresta
+ * @autor: Renan Nunes da Costa Gonçalves
+*/
+Aresta::Aresta(int id,ElementoNo* cab, ElementoNo* cau, float peso){
+    this->cabeca = cab;
+    this->cauda = cau;
+    this->peso = peso;
+    this->id = id;
+}
 
 
 /**

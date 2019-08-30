@@ -13,7 +13,6 @@ Grafo::Grafo(bool x,bool y){
     this->orientado = x;
     this->ponderado = y;
     this->ordem = 0;
-    this->raiz = nullptr;
 }
 
 /**
@@ -34,15 +33,15 @@ void Grafo::imprime(){
     
     No* p;
     for(int i = 0; i < this->ordem;i++){
-        p = this->raiz;
+    
 
 
     }
 }
 
 void Grafo::insereAresta(int idNo1, float pesoNo1, int idNo2, float pesoNo2, float pesoAresta){
-    No* v = buscaNo(idNo1);
-    No* a = buscaNo(idNo2);
+    No* v;// = buscaNo(idNo1);
+    No* a;// = buscaNo(idNo2);
 
     bool existeV = true;
     bool existeA = true;
@@ -51,7 +50,7 @@ void Grafo::insereAresta(int idNo1, float pesoNo1, int idNo2, float pesoNo2, flo
     //Verifica se os vértices a serem ligados por uma aresta Existem, caso não, os cria
     if (v == nullptr){
         existeV = false;
-        insereNo(idNo1,pesoNo1);
+        //insereNo(idNo1,pesoNo1);
         //insere o ultimo elemento em uma lista
     }
 }
@@ -59,10 +58,6 @@ void Grafo::insereAresta(int idNo1, float pesoNo1, int idNo2, float pesoNo2, flo
 /*Getters e Setters*/
 int Grafo::getOrdem(){
     return this->ordem;
-}
-
-No* Grafo::getRaiz(){
-    return this->raiz;
 }
 
 bool Grafo::ehOrientado(){

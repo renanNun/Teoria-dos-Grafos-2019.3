@@ -10,8 +10,6 @@ using namespace std;
 No::No(int id){
     this->idNo = id;
     this->pesoNo = -1;
-    this->prox = nullptr;
-    this->adj = nullptr;
     this->din = 0;
     this->dout = 0;
 }
@@ -25,8 +23,6 @@ No::No(int id){
 No::No(int id, float p){
     this->idNo = id;
     this->pesoNo = p;
-    this->prox = nullptr;
-    this->adj = nullptr;
     this->din = 0;
     this->dout = 0;
 }
@@ -65,28 +61,12 @@ int No::getGrauSaida(){
     return this->dout;
 }
 
-No* No::getProx(){
-    return this->prox;
-}
-
-Aresta* No::getAdj(){
-    return this->adj;
-}
-
 void No::setIdNo(int p){
     this->idNo = p;
 }
 
 void No::setPesoNo(float p){
     this->pesoNo = p;
-}
-
-void No::setProx(No* p){
-    this->prox = p;
-}
-
-void No::setAdj(Aresta* p){
-    this->adj = p;
 }
 
 void No::aumentaGrauSaida(){

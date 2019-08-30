@@ -20,9 +20,20 @@ private:
     Aresta* ultimo;
     int numeroNos;
 public:
-    ListaAresta();
+    ListaAresta(Aresta* p,Aresta* u,int numNos);
     ~ListaAresta();
 
+    Aresta* getPrimeiro();
+    Aresta* getUltimo();
+    int getNumNos();
+
+    void setPrimeiro(Aresta* p);
+    void setUltimo(Aresta* p);
+    void setNumNos(int p);
+
+    /*Métodos da classe*/
+    void insereAresta(ElementoNo* cab, ElementoNo* cau, float peso);
+    bool excluiAresta(ElementoNo* no);
 };
 
 #endif //LISTAARESTA_H_INCLUDED
